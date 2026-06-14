@@ -1,0 +1,13 @@
+.DS_Store
+*.o
+*.obj
+*.exe
+build/
+dist/
+*.log
+*.ppt
+*.pptx
+*.pdf
+*.doc
+*.docx
+参考资料/
