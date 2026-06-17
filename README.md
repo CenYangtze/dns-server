@@ -47,26 +47,24 @@ For real DNS service on the local host, run as administrator and use the default
 
 ## Example Tests
 
-In another terminal, query a local table entry:
+The repository includes PowerShell scripts for testing the server on a
+non-privileged local port. This is the recommended method on Windows because
+the built-in `nslookup.exe` may not reliably send queries to custom UDP ports.
 
 ```powershell
-nslookup -port=10530 test1 127.0.0.1
+powershell -ExecutionPolicy Bypass -File .\tests\test-dnsrelay.ps1
 ```
 
-Expected result: `11.111.11.111`.
-
-Query a blocked entry:
+To query an already running server:
 
 ```powershell
-nslookup -port=10530 test0 127.0.0.1
+powershell -ExecutionPolicy Bypass -File .\tests\query-dnsrelay.ps1 -Domain www.baidu.com -Port 10530
 ```
 
-Expected result: NXDOMAIN.
-
-Query an unmatched public domain:
+To test a custom local override without editing `dnsrelay.txt`:
 
 ```powershell
-nslookup -port=10530 www.bupt.edu.cn 127.0.0.1
+powershell -ExecutionPolicy Bypass -File .\tests\test-dnsrelay.ps1 -Domain www.baidu.com -ExpectedIp 1.2.3.4 -Port 10530
 ```
 
-Expected result: the server relays the query to the configured upstream DNS server.
+See `docs/RUNNING.md` for the full run and test guide.
