@@ -11,3 +11,5 @@ dist/
 *.doc
 *.docx
 参考资料/
+DNS-expt-material/*
+__pycache__/*

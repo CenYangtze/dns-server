@@ -67,4 +67,24 @@ To test a custom local override without editing `dnsrelay.txt`:
 powershell -ExecutionPolicy Bypass -File .\tests\test-dnsrelay.ps1 -Domain www.baidu.com -ExpectedIp 1.2.3.4 -Port 10530
 ```
 
+To run a simple multi-client concurrency benchmark:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\tests\benchmark-dnsrelay.ps1 -StartServer -Clients 20 -RequestsPerClient 50
+```
+
+If you prefer Python, an equivalent benchmark is also available:
+
+```powershell
+python .\tests\benchmark-dnsrelay.py --start-server --clients 20 --requests-per-client 50
+```
+
+The benchmarks bind each client to a distinct local UDP port and mix
+`dnsrelay.txt` entries with public domains by default. You can override the
+local port base with `-BaseLocalPort` in PowerShell or `--base-local-port` in
+Python, and you can supply your own domain list with `-Domains` / `--domains`.
+
+The Python version uses the same idea and accepts `--base-local-port`,
+`--table-sample-size`, and repeated `--public-domain` flags.
+
 See `docs/RUNNING.md` for the full run and test guide.
