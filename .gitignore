@@ -12,4 +12,4 @@ dist/
 *.docx
 参考资料/
 DNS-expt-material/*
-__pycache__/*
+__pycache__
