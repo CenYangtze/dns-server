@@ -1,0 +1,22 @@
+DNS relay benchmark
+Executable  : D:\myprograms\schoolcoursecode\Net\DNS-simul\build\dnsrelay.exe
+Start server: True
+Output      : docs\report_v0_5_2.txt
+Log dir     : C:\Users\nice_bot\AppData\Local\Temp\dnsrelay-bench-rwnnxv9l
+Domains     : 008.cn, 2qq.cn, 555.265.com, abc.265.com, abcdesign.ru, ad.qingyule.com, alexey.pioneers.com.ru, baltnet.ru, bupt, cctv1.net, cctv8.net, chinabdkx.363.net, ciachoo.pl, clients.babylon.co.il, dicto.ru, elemental.ru, errorguard.com, example.com, financial.washingtonpost.com, free.bestialityhost.com, friendlygreeting.com, sina, sohu, test1, test2, www.apple.com, www.baidu.com, www.bupt.edu.cn, www.cloudflare.com, www.github.com, www.microsoft.com, www.wikipedia.org
+
+DNS relay benchmark scenario
+Servers     : 5
+Targets     : 127.0.0.1:10530..10534
+Clients/srv : 2
+Clients     : 10
+Base port   : 20000
+Local ports : 20000..20009
+Per client  : 40
+Requests    : 400
+Elapsed     : 0.070 s
+Throughput  : 5748.91 req/s
+Success     : 400
+Timeout     : 0
+Errors      : 0
+Latency ms  : avg=1.20 min=0.05 p50=0.23 p95=4.82 p99=5.62 max=6.11

@@ -1,0 +1,56 @@
+DNS relay benchmark
+Executable  : D:\myprograms\schoolcoursecode\Net\DNS-simul\build\dnsrelay.exe
+Start server: True
+Output      : docs\report_v0_15_1.txt
+Log dir     : C:\Users\nice_bot\AppData\Local\Temp\dnsrelay-bench-8zp1tsqa
+Domains     : 008.cn, 2qq.cn, 555.265.com, abc.265.com, abcdesign.ru, ad.qingyule.com, alexey.pioneers.com.ru, baltnet.ru, bupt, cctv1.net, cctv8.net, chinabdkx.363.net, ciachoo.pl, clients.babylon.co.il, dicto.ru, elemental.ru, errorguard.com, example.com, financial.washingtonpost.com, free.bestialityhost.com, friendlygreeting.com, sina, sohu, test1, test2, www.apple.com, www.baidu.com, www.bupt.edu.cn, www.cloudflare.com, www.github.com, www.microsoft.com, www.wikipedia.org
+
+DNS relay benchmark scenario
+Servers     : 15
+Targets     : 127.0.0.1:10530..10544
+Clients/srv : 1
+Clients     : 15
+Base port   : 20000
+Local ports : 20000..20014
+Per client  : 40
+Requests    : 600
+Elapsed     : 3.094 s
+Throughput  : 189.75 req/s
+Success     : 587
+Timeout     : 13
+Errors      : 0
+Latency ms  : avg=1.61 min=0.05 p50=0.37 p95=6.37 p99=8.02 max=9.22
+
+Per-server summary:
+  server= 0 port=10530 requested=40 success=39 timeout=1 error=0
+  server= 1 port=10531 requested=40 success=39 timeout=1 error=0
+  server= 2 port=10532 requested=40 success=39 timeout=1 error=0
+  server= 3 port=10533 requested=40 success=39 timeout=1 error=0
+  server= 4 port=10534 requested=40 success=39 timeout=1 error=0
+  server= 5 port=10535 requested=40 success=39 timeout=1 error=0
+  server= 6 port=10536 requested=40 success=39 timeout=1 error=0
+  server= 7 port=10537 requested=40 success=40 timeout=0 error=0
+  server= 8 port=10538 requested=40 success=40 timeout=0 error=0
+  server= 9 port=10539 requested=40 success=39 timeout=1 error=0
+  server=10 port=10540 requested=40 success=39 timeout=1 error=0
+  server=11 port=10541 requested=40 success=39 timeout=1 error=0
+  server=12 port=10542 requested=40 success=39 timeout=1 error=0
+  server=13 port=10543 requested=40 success=39 timeout=1 error=0
+  server=14 port=10544 requested=40 success=39 timeout=1 error=0
+
+Per-client summary:
+  server= 0 target_port=10530 client=  0 local_port=20000 requested=40 success=39 timeout=1 error=0
+  server= 1 target_port=10531 client=  0 local_port=20001 requested=40 success=39 timeout=1 error=0
+  server= 2 target_port=10532 client=  0 local_port=20002 requested=40 success=39 timeout=1 error=0
+  server= 3 target_port=10533 client=  0 local_port=20003 requested=40 success=39 timeout=1 error=0
+  server= 4 target_port=10534 client=  0 local_port=20004 requested=40 success=39 timeout=1 error=0
+  server= 5 target_port=10535 client=  0 local_port=20005 requested=40 success=39 timeout=1 error=0
+  server= 6 target_port=10536 client=  0 local_port=20006 requested=40 success=39 timeout=1 error=0
+  server= 7 target_port=10537 client=  0 local_port=20007 requested=40 success=40 timeout=0 error=0
+  server= 8 target_port=10538 client=  0 local_port=20008 requested=40 success=40 timeout=0 error=0
+  server= 9 target_port=10539 client=  0 local_port=20009 requested=40 success=39 timeout=1 error=0
+  server=10 target_port=10540 client=  0 local_port=20010 requested=40 success=39 timeout=1 error=0
+  server=11 target_port=10541 client=  0 local_port=20011 requested=40 success=39 timeout=1 error=0
+  server=12 target_port=10542 client=  0 local_port=20012 requested=40 success=39 timeout=1 error=0
+  server=13 target_port=10543 client=  0 local_port=20013 requested=40 success=39 timeout=1 error=0
+  server=14 target_port=10544 client=  0 local_port=20014 requested=40 success=39 timeout=1 error=0

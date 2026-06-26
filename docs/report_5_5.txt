@@ -1,0 +1,56 @@
+DNS relay benchmark
+Executable  : D:\myprograms\schoolcoursecode\Net\DNS-simul\build\dnsrelay_th.exe
+Start server: True
+Output      : docs\report_5_5.txt
+Log dir     : C:\Users\nice_bot\AppData\Local\Temp\dnsrelay-bench-fexwao1m
+Domains     : 008.cn, 2qq.cn, 555.265.com, abc.265.com, abcdesign.ru, ad.qingyule.com, alexey.pioneers.com.ru, baltnet.ru, bupt, cctv1.net, cctv8.net, chinabdkx.363.net, ciachoo.pl, clients.babylon.co.il, dicto.ru, elemental.ru, errorguard.com, example.com, financial.washingtonpost.com, free.bestialityhost.com, friendlygreeting.com, sina, sohu, test1, test2, www.apple.com, www.baidu.com, www.bupt.edu.cn, www.cloudflare.com, www.github.com, www.microsoft.com, www.wikipedia.org
+
+DNS relay benchmark scenario
+Servers     : 5
+Targets     : 127.0.0.1:10530..10534
+Clients/srv : 5
+Clients     : 25
+Base port   : 20000
+Local ports : 20000..20024
+Per client  : 40
+Requests    : 1000
+Elapsed     : 3.099 s
+Throughput  : 314.58 req/s
+Success     : 975
+Timeout     : 25
+Errors      : 0
+Latency ms  : avg=1.63 min=0.06 p50=0.32 p95=7.17 p99=9.14 max=12.88
+
+Per-server summary:
+  server= 0 port=10530 requested=200 success=195 timeout=5 error=0
+  server= 1 port=10531 requested=200 success=195 timeout=5 error=0
+  server= 2 port=10532 requested=200 success=195 timeout=5 error=0
+  server= 3 port=10533 requested=200 success=195 timeout=5 error=0
+  server= 4 port=10534 requested=200 success=195 timeout=5 error=0
+
+Per-client summary:
+  server= 0 target_port=10530 client=  0 local_port=20000 requested=40 success=39 timeout=1 error=0
+  server= 0 target_port=10530 client=  1 local_port=20001 requested=40 success=39 timeout=1 error=0
+  server= 0 target_port=10530 client=  2 local_port=20002 requested=40 success=39 timeout=1 error=0
+  server= 0 target_port=10530 client=  3 local_port=20003 requested=40 success=39 timeout=1 error=0
+  server= 0 target_port=10530 client=  4 local_port=20004 requested=40 success=39 timeout=1 error=0
+  server= 1 target_port=10531 client=  0 local_port=20005 requested=40 success=39 timeout=1 error=0
+  server= 1 target_port=10531 client=  1 local_port=20006 requested=40 success=39 timeout=1 error=0
+  server= 1 target_port=10531 client=  2 local_port=20007 requested=40 success=39 timeout=1 error=0
+  server= 1 target_port=10531 client=  3 local_port=20008 requested=40 success=39 timeout=1 error=0
+  server= 1 target_port=10531 client=  4 local_port=20009 requested=40 success=39 timeout=1 error=0
+  server= 2 target_port=10532 client=  0 local_port=20010 requested=40 success=39 timeout=1 error=0
+  server= 2 target_port=10532 client=  1 local_port=20011 requested=40 success=39 timeout=1 error=0
+  server= 2 target_port=10532 client=  2 local_port=20012 requested=40 success=39 timeout=1 error=0
+  server= 2 target_port=10532 client=  3 local_port=20013 requested=40 success=39 timeout=1 error=0
+  server= 2 target_port=10532 client=  4 local_port=20014 requested=40 success=39 timeout=1 error=0
+  server= 3 target_port=10533 client=  0 local_port=20015 requested=40 success=39 timeout=1 error=0
+  server= 3 target_port=10533 client=  1 local_port=20016 requested=40 success=39 timeout=1 error=0
+  server= 3 target_port=10533 client=  2 local_port=20017 requested=40 success=39 timeout=1 error=0
+  server= 3 target_port=10533 client=  3 local_port=20018 requested=40 success=39 timeout=1 error=0
+  server= 3 target_port=10533 client=  4 local_port=20019 requested=40 success=39 timeout=1 error=0
+  server= 4 target_port=10534 client=  0 local_port=20020 requested=40 success=39 timeout=1 error=0
+  server= 4 target_port=10534 client=  1 local_port=20021 requested=40 success=39 timeout=1 error=0
+  server= 4 target_port=10534 client=  2 local_port=20022 requested=40 success=39 timeout=1 error=0
+  server= 4 target_port=10534 client=  3 local_port=20023 requested=40 success=39 timeout=1 error=0
+  server= 4 target_port=10534 client=  4 local_port=20024 requested=40 success=39 timeout=1 error=0
